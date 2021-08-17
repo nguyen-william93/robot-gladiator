@@ -40,7 +40,6 @@ var fight = function(enemyName){
         }
     }
 };
-<<<<<<< HEAD
 for (var i = 0; i < enemyNames.length; i++){
     if (playerHealth > 0){
         window.alert('Welcome to Robot Gladiators! Round ' + (i+1));
@@ -53,7 +52,6 @@ for (var i = 0; i < enemyNames.length; i++){
         break;
     }
 };
-=======
 var startGame = function (){
     playerHealth = 100;
     playerAttack = 10;
@@ -88,5 +86,4 @@ var endGame = function(){
 
 
 startGame();
->>>>>>> feature/initial-game
 //fight();
