@@ -40,15 +40,16 @@ var fight = function(enemyName){
         }
     }
 };
-if (playerHealth > 0){
-    window.alert('Welcome to Robot Gladiators! Round ' + (i+1));
-    for (var i = 0; i < enemyNames.length; i++){
+for (var i = 0; i < enemyNames.length; i++){
+    if (playerHealth > 0){
+        window.alert('Welcome to Robot Gladiators! Round ' + (i+1));
         var pickEnemyName = enemyNames[i];
         enemyHealth = 50;
         fight(pickEnemyName);
+    
+    }else{
+        window.alert ("You have lost your robot in the Battle! Game Over!");
+        break;
     }
-}else{
-    window.alert ("You have lost your robot in the Battle! Game Over!");
-    break;
-}
+};
 //fight();
